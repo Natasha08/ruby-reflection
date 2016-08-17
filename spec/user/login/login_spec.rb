@@ -17,7 +17,6 @@ feature "Login" do
     click_on "Login"
     fill_in "Email", with: 'invalid_user@test.com'
     fill_in "Password", with: 'invalid_password'
-    save_and_open_page
     click_on "Log in"
 
     expect(page).to have_content("Invalid Email or password")
