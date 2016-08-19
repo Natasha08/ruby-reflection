@@ -1,15 +1,3 @@
 <h1> New Article Entry </h1>
 
-<%= form_for @article do |f| %>
-  <p>
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :text %>
-    <%= f.text_field :text %>
-  </p>
-  <p>
-    <%= f.submit "Create Article"%>
-  </p>
-<% end %>
+<%= render 'form' %>

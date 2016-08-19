@@ -15,7 +15,6 @@ feature "user updates an article" do
     click_on "Edit"
     fill_in "Title", with: 'A Man for All Seasons'
     fill_in "Text", with: 'Every man has his price...'
-
     click_on "Update Article"
     expect(page).to have_content 'Every man has his price...'
   end

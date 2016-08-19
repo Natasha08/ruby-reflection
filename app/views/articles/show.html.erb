@@ -1,1 +1,11 @@
-<%= link_to "Edit", edit_article_path %>
+  <div>
+    <strong>Title</strong><br />
+    <%= @article.title %>
+  </div><br />
+  <div>
+    <strong>Text</strong><br />
+    <%= @article.text %>
+  </div><br />
+
+  <%= link_to "Edit", edit_article_path %>
+  <%= link_to "Back", articles_path %>
